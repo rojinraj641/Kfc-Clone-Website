@@ -222,8 +222,7 @@
 
 @media(max-width:640px){
     .menu-container{
-        padding-left: 10px;
-        padding-right: 0px;
+        padding-left: 170px;
     }
 }
 
@@ -231,7 +230,6 @@
     .menu-container
     {
         padding-left:120px;
-
     }
 }
 .menu{
@@ -329,6 +327,11 @@
 @media(max-width:492px){
     .offer-heading-font1{
        font-size: 18px;
+    }
+}
+@media(max-width:640px){
+    .offer-heading-font1{
+        font-size: 20px;
     }
 }
 
