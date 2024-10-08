@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kfc Clone</title>
-    <link href="kfcstyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="kfcstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--top stickey banner-->
-    <div class="banner">
+    <div class="top__banner">
         <!--location table-->
-        <div class="setLocationData">
-            <div id="locationIcon">
-                <image src="https://online.kfc.co.in/static/media/Search_Pin.e88a4d93.svg"></image>
+        <div class="setLocationData container">
+            <div class="locationIcon">
+                <img src="https://online.kfc.co.in/static/media/Search_Pin.e88a4d93.svg">
             </div>
-            <div class="locationData">Allow location access for local store menu and promos</div>
-            <div>
-                <button id="locationButton">Set Location</button>
+            <div class="locationData">
+                <p class="locatonData-font">Allow location access for local store menu and promos</p>
+            </div>
+            <div class="locationButton">
+                <button class="setLocation">Set Location</button>
             </div>
         </div>
         <!--location table ends-->
         <hr>
         <!--header bar-->
         <nav>
-            <div class="top-container">
+            <div class="top__container container-fluid navbar">
                 <div class="kfcLogo">
                     <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg">
                 </div>
-                <div class="navigation-font">
-                    <h3>Menu</h3>
+                <div class="navibar_menu">
+                    <h3 class="navigation-font">Menu</h3>
                 </div>
-                <div class="navigation-font2">
-                    <h3>Deals</h3>
+                <div class="navibar_deals">
+                    <h3 class="navigation-font2">Deals</h3>
                 </div>
                 <div class="userIcon">
                     <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg">
                 </div>
-                <div class="navigation-font3">
-                    <h3>Sign In</h3>
+                <div class="navibar_signin">
+                   <p class="navigation-font3">Sign in</p>
                 </div>
                 <div class="vline">
                     <p>|</p>
@@ -58,12 +61,11 @@
     <!--sticky banner ends-->
 
     <!--start order-->
-    <div class="navbar">
-        <div class="headerData">
+   
+        <div class="headerData container-fluid">
             <p class="headerFont">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</p>        
             <button class="startOrder">Start Order</button>
         </div>
-    </div>
     <!--start order-->
 
     <!--main image-->
@@ -74,9 +76,9 @@
 
     <!--menu-->
     <section>
-        <div class="menu-container">
+        <div class="menu-container container-fluid">
             <!--menu heading-->
-            <div class="menu">
+            <div class="menu container">
                 <div class="menu-heading">
                     <h3>browse categories</h3>
                 </div>
@@ -85,7 +87,7 @@
                 </div>
             </div>
             <!--menu heading ends-->
-            <div class="wrapper">
+            <div class="menuBox">
                 <div class="box">
                     <img class="img-size" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT289.jpg?ver=53.39">
                     <h3 class="img-font">international burger fest</h3>
@@ -103,7 +105,7 @@
                     <h3 class="img-font">box meals</h3>
                 </div>
             </div>
-            <div class="wrapper">
+            <div class="menuBox">
                 <div class="box">
                     <img class="img-size" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT99.jpg?ver=53.39">
                     <h3 class="img-font">burgers</h3>
@@ -128,25 +130,29 @@
     <!--offer table-->
     <section>
         <div class="offer-container">
-            <!--offer table heading-->
-            <div class="offer-heading-container">
-                <div class="font-1">
+            <!--three lines-->
+                <div class="red-lines">
                     <div class="three-lines">
                     </div>
                     <div class="three-lines">
                     </div>
                     <div class="three-lines">
                     </div>
-                    <h1 id="offer-heading-font1">exculsive offers for you</h1>
                 </div>
-                <div class="font-2">
-                    <h4 id="offer-heading-font2">View All Details <span>&#8594</span></h4>
+                <!--offer table heading starts-->
+        
+                <div class="offer-heading-container">    
+                    <div class="font-1 col-12 col-sm-4 col-md-6 col-lg-7 col-xl-8">    
+                        <h1 class="offer-heading-font1">exculsive offers for you</h1>
+                    </div>
+                    <div class="font-2 col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                        <h4 class="offer-heading-font2">View All Details <span>&#8594</span></h4>
+                    </div>
                 </div>
-            </div>
             <!--offer table heading ends-->
 
             <!--offers-->
-            <div class="offerGrid">
+            <div class="wrapper">
                 <div class="offerBox">
                     <div class="offerBox1">
                         <img class="offerImg" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/CHKZINGER.jpg?ver=53.41">
@@ -182,14 +188,76 @@
                         <button class="applyOffer">Apply Offer</button>
                     </div>
                 </div>
+                <div class="offerBox">
+                    <img class="offerImg" src=https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/PHP75.jpg?ver=53.81>
+                    <div class="offerBox-content">
+                        <h1 class="offerBox-heading">get flat rs.75 of...</h>
+                        <p class="offerBox-para" >Get flat Rs.75 off on a cart value ofL<br>Rs.599 or above</p>
+                    </div>
+                    <div class="offerBox-bottom">
+                        <a class="viewDetails"><u>View Details</u></a>
+                        <button class="applyOffer">Apply Offer</button>
+                    </div>
+                </div>
+                <div class="offerBox">
+                    <img class="offerImg" src=https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYPOP.jpg?ver=53.81>
+                    <div class="offerBox-content">
+                        <h1 class="offerBox-heading">free medium...</h>
+                        <p class="offerBox-para" >Free Popcorn (Med) on a cart<br>value of 499 or more.Sunday only</p>
+                    </div>
+                    <div class="offerBox-bottom">
+                        <a class="viewDetails"><u>View Details</u></a>
+                        <button class="applyOffer">Apply Offer</button>
+                    </div>
+                </div>
+                <div class="offerBox">
+                    <img class="offerImg" src=https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYCHKN.jpg?ver=53.81>
+                    <div class="offerBox-content">
+                        <h1 class="offerBox-heading">free 1pc hot...</h>
+                        <p class="offerBox-para" >Free 1pc Chicken on a cart value of<br>499 or more.Sunday only</p>
+                    </div>
+                    <div class="offerBox-bottom">
+                        <a class="viewDetails"><u>View Details</u></a>
+                        <button class="applyOffer">Apply Offer</button>
+                    </div>
+                </div>
+                <div class="offerBox">
+                    <img class="offerImg" src=https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYSTRIPS.jpg?ver=53.81>
+                    <div class="offerBox-content">
+                        <h1 class="offerBox-heading">free 3pc...</h>
+                        <p class="offerBox-para" >Free 3pc Strips on a cart value of<br>499 or more.Sunday only</p>
+                    </div>
+                    <div class="offerBox-bottom">
+                        <a class="viewDetails"><u>View Details</u></a>
+                        <button class="applyOffer">Apply Offer</button>
+                    </div>
+                </div>
+                <div class="offerBox">
+                    <img class="offerImg" src=https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYVZINGER.jpg?ver=53.81>
+                    <div class="offerBox-content">
+                        <h1 class="offerBox-heading">free veg...</h>
+                        <p class="offerBox-para" >Free Veg Zinger on a cart value of<br>499 or more.Sunday only</p>
+                    </div>
+                    <div class="offerBox-bottom">
+                        <a class="viewDetails"><u>View Details</u></a>
+                        <button class="applyOffer">Apply Offer</button>
+                    </div>
+                </div>
+                <div class="offerBox">
+                    <img class="offerImg" src=https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/YAYFRIES.jpg?ver=53.81>
+                    <div class="offerBox-content">
+                        <h1 class="offerBox-heading">free medium...</h>
+                        <p class="offerBox-para" >Free Fries (Med) on a cart value of<br>499 or more.Sunday only</p>
+                    </div>
+                    <div class="offerBox-bottom">
+                        <a class="viewDetails"><u>View Details</u></a>
+                        <button class="applyOffer">Apply Offer</button>
+                    </div>
+                </div>
             </div>
             <!--offer ends-->
 
-            <!--scroll bar-->
-            <div class="scrollbar">
-                <p><hr></p>
-            </div>
-            <!--scroll bar ends-->
+            
         </div>
     </section>
     <!--offer table ends-->
@@ -197,74 +265,95 @@
     
     <footer>
         <div class="bottom">
-            <div class="footer-container">
+            <div class="footer-container container-fluid">
                 <!--kfc logo-->
-                <div class="footer-logo">
+                <div class="footer-logo col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                     <img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg">
                 </div>
                 <!--kfc logo ends-->
                 <!--table-->
-                <div class="table">
-                    <h4 class="footer-table-heading">KFC India</h4>
+                
+                <div class="table col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                     <ul>
-                       <h4 class="footer-table-content">About KFC</h4>
-                       <h4 class="footer-table-content">KFC Care</h4>
-                       <h4 class="footer-table-content">Careers</h4>
-                       <h4 class="footer-table-content">Our Golden Past</h4>
-                       <h4 class="footer-table-content">Responsible Disclosure</h4>
+                        <li>
+                            <a class="footer-table-heading" href="#">KFC India</a>
+                        </li>
+                    </ul>
+                    <ul class="submenu">
+                        <li><a class="footer-table-content" href="#">About KFC</a></li>
+                        <li><a class="footer-table-content" href="#">KFC Care</a></li>
+                        <li><a class="footer-table-content" href="#">Our Golden Past</a></li>
+                        <li><a class="footer-table-content" href="#">Responsible Disclosure</a></li>
                     </ul>
                 </div>
-                <div class="table">
-                    <h4 class="footer-table-heading">Legal</h4>
+                <div class="table col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                     <ul>
-                       <h4 class="footer-table-content">Terms and Conditions</h4>
-                       <h4 class="footer-table-content">Privacy Policy</h4>
-                       <h4 class="footer-table-content">Disclaimer</h4>
-                       <h4 class="footer-table-content">Caution Notice</h4>
+                        <li>
+                            <a class="footer-table-heading" href="#">Legal</a>
+                        </li>
+                    </ul>
+                    <ul class="submenu">
+                        <li><a class="footer-table-content" href="#">Terms and Conditions</a></li>
+                        <li><a class="footer-table-content" href="#">Privacy Policy</a></li>
+                        <li><a class="footer-table-content" href="#">Disclaimer</a></li>
+                        <li><a class="footer-table-content" href="#">Caution Notice</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="table col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                    <ul>
+                        <li>
+                            <a class="footer-table-heading" href="#">KFC India</a>
+                        </li>
+                    </ul>
+                    <ul class="submenu">
+                        <li><p class="footer-table-content">Menu</p></li>
+                        <li><p class="footer-table-content">Order Lookup</p></li>
+                        <li><p class="footer-table-content">Gift Card</p></li>
+                        <li><p class="footer-table-content">Nutrition & Allergen</p></li>
                     </ul>
                 </div>
-                <div class="table">
-                    <h4 class="footer-table-heading">KFC Food</h4>
+                <div class="table col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                     <ul>
-                       <h4 class="footer-table-content">Menu</h4>
-                       <h4 class="footer-table-content">Order Lookup</h4>
-                       <h4 class="footer-table-content">Gift Card</h4>
-                       <h4 class="footer-table-content">Nutrition & Allergen</h4>
+                        <li>
+                            <a class="footer-table-heading" href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="submenu">
+                        <li><p class="footer-table-content" href="#">Get Help</p></li>
+                        <li><p class="footer-table-content" href="#">Contact Us</p></li>
+                        <li><p class="footer-table-content" href="#">KFC Feedback</p></li>
+                        <li><p class="footer-table-content" href="#">Privacy Policy</p></li>
                     </ul>
                 </div>
-                <div class="table">
-                    <h4 class="footer-table-heading">Support</h4>
-                    <ul>
-                       <h4 class="footer-table-content">Get Help</h4>
-                       <h4 class="footer-table-content">Contact Us</h4>
-                       <h4 class="footer-table-content">KFC Feedback</h4>
-                       <h4 class="footer-table-content">Privacy Policy</h4>
-                    </ul>
-                </div>
+            
                 <!--table ends-->
                 <!--find icon-->
-                <div class="find">
+                <div class="find col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1">
                     <img src="https://images.ctfassets.net/wtodlh47qxpt/6qgKpWUOIsrIiazhk3cdmF/d60b4c20be69bab1f939bf33348b67e9/Find_KFC.svg">
                     <u class="findContent">Find KFC</u>
-                </div>
+                </div> 
                 <!--find icon ends-->
                 <!--download playstore-->
-                <div class="playstore">
-                    <img src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg">
-                </div>
-                <!--download playstore ends-->
-                <!--download appstore-->
-                <div class="appstore">
-                    <img src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg">
+                <div class="download col-6 col-sm-1 col-md-12 col-lg-1 col-xl-1">
+                    <div class="playstore">
+                        <img src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg">
+                    </div>
+                 <!--download playstore ends-->
+                 <!--download appstore-->
+                    <div class="appstore">
+                        <img src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg">
+                    </div>
                 </div>
                 <!--download appstore ends-->
             </div>
             <div class="bottom-line-container">
                 <!--copyright-->
-                <div class="bottm-line-text">
+                <div class="bottm-line-text col-7 ">
                     <h6 class="bottom-line-font">Copyright © KFC Corporation 2024 All rights reserved</h6>
                 </div>
                 <!--insta-->
+                <div class="icons col-5 ">
                 <div class="instaIcon">
                     <img src="https://images.ctfassets.net/wtodlh47qxpt/4ZHyPA2EeaoP3aqtNDriBA/463462a9c27b0aa585e12b21ce3766e0/Social_Insta_White.svg">
                 </div>
@@ -276,10 +365,14 @@
                 <div class="xIcon">
                     <img src="https://images.ctfassets.net/wtodlh47qxpt/78z9x0WwdkdXwGVK726EKX/6599ca34ec88e2a6f46d7d94ed85a8ad/Social_Twitter_White.svg">
                 </div>
+                </div>
             </div>
         </div>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
  
 </body>
